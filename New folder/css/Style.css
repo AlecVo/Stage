@@ -1,0 +1,383 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    min-height: auto;
+  }
+  
+/* Navbar */
+header{
+    background-color: #dadada;
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.2s;
+    padding: 40px 200px 40px;
+  }
+  header .logo{
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    transition: 0.2s;
+    margin-right: 150px;
+    padding-bottom: 5px;
+  }
+  header .logo:hover{
+   color: rgb(91, 48, 160);
+  }
+  header ul {
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin-right: 300px;
+    padding-left: 25px;
+  }
+  header ul li {
+    position: relative;
+  }
+  header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000;
+    letter-spacing: 2px;
+    font-weight: 700;
+    transition: 0.2s;
+    border: 1px solid transparent;
+  }
+  header ul li a:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: border;
+  background: rgb(91, 48, 160);
+  border: 4px solid #f1f2f4;
+  padding: 10px;
+  }
+  /* Navbar */
+
+  /* Hero */
+  .banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/banner2.jpg);
+    background-size: cover;
+  }
+  /* Hero */
+  #hero, #link{
+      padding-top: 100px;
+  }
+  #hero, h1 h2 h4, #link h2, #overons, h1 h2{
+      text-align: center;
+      color: #000;
+  }
+  #hero .columns{
+      padding-top: 150px;
+  }
+  .icon-background{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    border-radius: 50%;
+    background-color: rgb(91, 48, 160);
+    color: #dadada;
+    margin: auto;
+    font-size: 52px;
+  }
+  i{
+    margin: auto;
+    font-size: 40em ;
+  }
+  .card{
+      border-radius: 10%;
+  }
+  .mt-i{
+    margin-top: 200px;
+  }
+  /* Hero */
+
+  /* Verstuur */
+    #link, h3 h4{
+        text-align: left;
+        color: #000;
+    }
+    #link .columns{
+        padding-top: 50px;
+    }
+    #link img{
+        padding-top: 150px;
+        width: 75%;
+    }
+    #link h4{
+        margin-top: 50px;
+    }
+    button{
+        padding: 10px;
+        font-size: medium;
+        width: 100px;
+        background-color: white;
+        border-radius: 10px 10px 10px 10px;
+        border: 2px solid rgb(91, 48, 160);
+        cursor:pointer;
+    }
+    button:hover{
+        background-color: rgb(91, 48, 160);
+        color: white;
+        transition: 0.2s;
+        border: 2px solid #f1f2f4;
+    }
+    .wachtwoord{
+        background-color: #dadada;
+        width: 250px;
+        height: 45px;
+        border: 2px solid rgb(91, 48, 160);
+        margin-bottom: 100px;
+    }
+      .wachtwoord:focus {
+        background: white;
+    }
+    textarea {
+        width: 500px;
+        height: 200px;
+        background: none repeat scroll #dadada ;
+        border-radius: 10px 10px 10px 10px;
+        border-style: none solid solid none;
+        border-width: medium 1px 1px medium;
+        color: black;
+        font-size: medium;
+        line-height: 3em;
+        transition: background-color 0.2s ease 0s;
+        border: 2px solid rgb(91, 48, 160);
+      }
+      
+      textarea:focus {
+          background: none repeat scroll 0 0 white;
+          outline-width: 0;
+      }
+      select{
+        width:500px;
+        height:25px;
+        margin: auto;
+        background-color: #dadada;
+        border-radius: 6px 6px 6px 6px;
+        font-size: medium;
+        border: 2px solid rgb(91, 48, 160);
+      }
+      select:focus {
+        background-color: rgb(91, 48, 160);
+        color: white;
+      }
+      /* Footer */
+      .container{
+        max-width: 1170px;
+        margin:auto;
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    ul{
+        list-style: none;
+    }
+      .footer{
+        background-color: #dadada;
+        padding: 70px 0;
+    }
+    .footer-col{
+       width: 250px;
+       padding: 0 15px;
+    }
+    .footer-col h4{
+        font-size: 18px;
+        color: #000;
+        text-transform: capitalize;
+        margin-bottom: 35px;
+        font-weight: 500;
+        position: relative;
+    }
+    .footer-col h4::before{
+        content: '';
+        position: absolute;
+        left:0;
+        bottom: -10px;
+        background-color: #1e253f;
+        height: 2px;
+        box-sizing: border-box;
+        width: 100px;
+    }
+    .footer-col ul li:not(:last-child){
+        margin-bottom: 10px;
+    }
+    .footer-col ul li a{
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #000;
+        text-decoration: none;
+        font-weight: 300;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    .footer-col ul li a:hover{
+        color: rgb(91, 48, 160);
+        padding-left: 8px;
+    }
+    .footer-col .social-links a{
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: #f1f2f4;
+        margin: auto;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: rgb(91, 48, 160);
+        transition: all 0.5s ease;
+        border: 2px solid rgb(91, 48, 160);
+    }
+    .footer-col .social-links a:hover{
+        color: white;
+        background-color: rgb(91, 48, 160);
+    }
+
+    footer .logo{
+        font-weight: 500px;
+        color: #000;
+        text-decoration: none;
+        font-size: 1.5em;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: 0.2s;
+        margin-right: 150px;
+        padding-top: 10px;
+      }
+      footer .logo:hover{
+       color: rgb(91, 48, 160);
+      }
+      /* Footer */
+
+/* Over Ons */
+#overons h2{
+    padding-top: 100px;
+}
+#overons h1{
+    padding-top: 100px;
+}
+#overons p{
+    padding-bottom: 100px;
+    text-align: left;
+}
+.image{
+    display: block;
+    height: 600px;
+    width: 1300px;
+  }
+
+/* Over Ons */
+
+/* Privacy */
+#privacy h2{
+    padding-top: 50px;
+}
+#privacy h1{
+    padding-top: 100px;
+    text-align: center;
+}
+#privacy p{
+    padding-top: 25px;
+    padding-bottom: 100px;
+    text-align: left;
+}
+/* Privacy */
+
+/* Contact */
+#contact h2{
+    padding-top: 10px;
+}
+#contact h1{
+    padding-top: 100px;
+    text-align: center;
+    padding-bottom: 100px;
+}
+#contact p{
+    padding-top: 15px;
+    padding-bottom: 100px;
+    text-align: left;
+}
+#contact iframe{
+    padding-top: 50px; 
+    height: 600px;
+    width: 600px;
+}
+#contact i{
+    color: rgb(91, 48, 160);
+    padding-bottom: 100px; 
+}
+#contact i:hover{
+    color: darkgrey;
+}
+/* Contact */
+
+
+
+    /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    margin-top: 50px;
+  }
+  
+  /* mouse hover donkere achtergrond kleur */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+    cursor:pointer;
+  }
+  
+  /* als het aangevinkt iv verkleur de achtergrond */
+  .container input:checked ~ .checkmark {
+    background-color: rgb(91, 48, 160);
+  }
+  
+  /* verberg vinkje als het niet aangeduid word */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* toon vinkje als het aangeduid word */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* style van het vinkje*/
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }

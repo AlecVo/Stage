@@ -1,0 +1,289 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+  min-height: auto;
+}
+header{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.2s;
+  padding: 40px 100px;
+  z-index: 100000;
+}
+header .logo{
+  position: relative;
+  font-weight: 700;
+  color: #000;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.2s;
+}
+header .logo:hover{
+ color: rgb(179, 173, 173);
+}
+footer .logo{
+  position: relative;
+  font-weight: 500;
+  color: #000;
+  text-decoration: none;
+  font-size: larger;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.2s;
+}
+footer .logo:hover{
+ color: rgb(179, 173, 173);
+}
+header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul li {
+  position: relative;
+  list-style: none;
+}
+.image{
+  display: block;
+  height: 600px;
+  width: 1300px;
+}
+header ul li a {
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #000;
+  letter-spacing: 2px;
+  font-weight: 900px;
+  transition: 0.2s;
+  border: 1px solid transparent;
+}
+header ul li a:hover {
+color: rgb(255, 255, 255);
+text-decoration: border;
+background: black;
+border: 2px solid #fff;
+padding: 10px;
+}
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/banner2.jpg);
+  background-size: cover;
+}
+.banner p {
+ color: #000;
+}
+.icon-background{
+  width: 80px;
+  height: 80px;
+  display: flex;
+  border-radius: 50%;
+  background-color: #BFC8EA;
+  margin: auto;
+ }
+ i{
+  margin: auto;
+  font-size: 40em ;
+}
+.card p,h1 {
+  text-align: center;
+}
+.card{
+  border-radius: 10%;
+  padding: 1em;
+}
+textarea {
+  width: 500px;
+  height: 200px;
+  background: none repeat scroll #BFC8EA ;
+  border-radius: 10px 10px 10px 10px;
+  border-style: none solid solid none;
+  border-width: medium 1px 1px medium;
+  color: #555555;
+  font-size: medium;
+  line-height: 3em;
+  transition: background-color 0.2s ease 0s;
+}
+
+textarea:focus {
+    background: none repeat scroll 0 0 #cdd8ff;
+    outline-width: 0;
+}
+select{
+  width:500px;
+  height:25px;
+  margin: auto;
+  background-color: #BFC8EA;
+  border-radius: 6px 6px 6px 6px;
+  font-size: medium;
+}
+ img{
+  width: 500px;
+}
+.wachtwoord{
+    background-color: #BFC8EA;
+    width: 250px;
+    height: 40px;
+}
+  .wachtwoord:focus {
+    background: #cdd8ff;
+    outline-width: 0;
+}
+/* begin */
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 250px;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #000;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #1e253f;
+	height: 2px;
+	box-sizing: border-box;
+	width: 100px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #000;
+	text-decoration: none;
+	font-weight: 300;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #cdd8ff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(0, 0, 0);
+	margin: auto;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #cdd8ff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #dadada;
+}
+@media screen and (max-width: 400px) {
+  .header ul li a{
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 601px) {
+  .header ul li a{
+    font-size: 100px;
+  }
+}
+
+
+
+
+
+
+
+
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+  
+  /* mouse hover donkere achtergrond kleur */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+    cursor:pointer;
+  }
+  
+  /* als het aangevinkt iv verkleur de achtergrond */
+  .container input:checked ~ .checkmark {
+    background-color: #BFC8EA;
+  }
+  
+  /* verberg vinkje als het niet aangeduid word */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* toon vinkje als het aangeduid word */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* style van het vinkje*/
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid rgb(0, 0, 0);
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+ 
